@@ -35,6 +35,10 @@ namespace EfMultipleProviders
                 case "PostgreSql":
                     services.AddDbContext<WeatherDbContext, PostgresDbContext>();
                     break;
+
+                case "Cosmos":
+                    services.AddDbContext<WeatherDbContext, CosmosDbContext>();
+                    break;
             }
         }
 
