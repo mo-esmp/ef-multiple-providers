@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace EfMultipleProviders.Data
 {
-    public class PostgresDbContext : MsSqlDbContext
+    public class PostgresDbContext : WeatherDbContext
     {
         public PostgresDbContext(IConfiguration configuration)
             : base(configuration)
